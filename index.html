@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="A. Baluja" />
+  <title>  Presentación estudios al CEIC</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="assets/css/extra.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title"><br> Presentación estudios al CEIC</h1>
+    <h2 class="author">A. Baluja</h2>
+    <h3 class="date">27 Marzo, 2019</h3>
+</section>
+
+<section id="legislacion" class="slide level2">
+<h2>Legislación:</h2>
+<ul>
+<li>Art. 18 CE</li>
+<li>Reglamento General de Protección de Datos (Reglamento UE 2016-679 del Parlamento europeo y del Consejo, de 27 de abril de 2016)</li>
+<li>Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales</li>
+<li>Muestras biológicas: RD 1716/2011</li>
+<li>Ley 9/2014 de Telecomunicaciones</li>
+</ul>
+<section data-background-image="./assets/img/books.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="bases-del-derecho-art-18-ce" class="slide level2">
+<h2>Bases del derecho (art 18 CE)</h2>
+<!--https://ayudaleyprotecciondatos.es/2018/11/13/derecho-privacidad-espana/-->
+<!-- Der. Imagen: potestad de cualquier individuo para no exponer su imagen o aspecto físico al público -->
+<!-- Der. honor: potestad de la persona para mantener una imagen digna -->
+<h3>
+<ul>
+<li>Autonomía del paciente</li>
+<li>Derecho a la propia imagen</li>
+<li>Derecho al honor</li>
+<li>Derecho a la intimidad</li>
+<li>Derecho a la privacidad de los menores</li>
+</ul>
+</h3>
+<section data-background-image="./assets/img/books.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="efectos-en-el-consentimiento" class="slide level2">
+<h2>Efectos en el consentimiento</h2>
+<div style="font-size:0.9em;">
+<ul>
+<li>Consentimiento expreso y verificable por parte del paciente.</li>
+<li>Obligatorio informar sobre identidad del responsable del tratamiento/ representante/ terceros.</li>
+<li><p>Conocer:</p>
+<ul>
+<li>FINALIDAD con la que se van a usar su información</li>
+<li>TIEMPO que permanecerá en la base de datos.</li>
+</ul></li>
+<li>Puede solicitar información acerca del tratamiento actual de su información.</li>
+<li>Derecho a la modificación de sus datos.</li>
+<li><p>Limitar o prohibir el uso de sus datos, aún habiendo dado su consentimiento previo (derecho de olvido).</p></li>
+</ul>
+</div>
+<section data-background-image="./assets/img/books.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="web-acis" class="slide level2">
+<h2>Web ACIS</h2>
+<section data-background-image="./assets/img/ceicweb.png" data-background-size="60%">
+</section>
+</section>
+<section id="documentos" class="slide level2">
+<h2>Documentos</h2>
+<section data-background-image="./assets/img/medicalrecords.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="consentimiento-informado" class="slide level2">
+<h2>Consentimiento informado</h2>
+<h2>
+<p>Dos partes diferenciadas:</p>
+<ul>
+<li>1.Hoja de información</li>
+<li>2.Consentimientos</li>
+</ul>
+</h2>
+<section data-background-image="./assets/img/doctor_talk.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="hoja-de-informacion" class="slide level2">
+<h2>1.Hoja de información:</h2>
+<h3>
+<ul>
+<li>Participación voluntaria</li>
+<li>Lenguaje llano</li>
+<li>Info de investigador</li>
+<li>Delegado protección de datos &amp; muestras</li>
+<li>Destino de los datos</li>
+<li>Plantilla en la web ACIS</li>
+</ul>
+</h3>
+<section data-background-image="./assets/img/doctor_talk.jpg" data-background-size="100%">
+</section>
+</section>
+<section id="consentimiento" class="slide level2">
+<h2>2.Consentimiento:</h2>
+<h3>
+<p>Alternativas</p>
+<ul>
+<li>Propio paciente</li>
+<li>Ante testigos</li>
+<li>Representante legal</li>
+<li>Menores maduros (min 14 años)</li>
+</ul>
+</h3>
+<section data-background-image="./assets/img/doctor_talk2.png" data-background-size="100%">
+</section>
+</section>
+<section id="otros-documentos" class="slide level2">
+<h2>Otros documentos</h2>
+<h3>
+<ul>
+<li><p>Compromisos</p>
+<ul>
+<li>Del/los IP (firma electrónica)</li>
+<li>De colaboradores (opcional)</li>
+</ul></li>
+<li><p>CV del/los IP</p></li>
+<li><p>Hoja de presentación al Comité</p>
+<ul>
+<li>Solicitud de evaluación</li>
+</ul></li>
+</ul>
+</h3>
+<section data-background-image="./assets/img/airmail.jpg" data-background-size="80%">
+</section>
+</section>
+<section id="protocolo" class="slide level2">
+<h2>Protocolo</h2>
+<ul>
+<li><p>Portada:</p>
+<ul>
+<li>Título, IP, Promotor, Fecha, Versión…</li>
+</ul></li>
+<li><p>Resumen</p>
+<ul>
+<li>Diseño</li>
+<li>Objetivos</li>
+<li>Variable principal</li>
+</ul></li>
+<li>Antecedentes</li>
+<li><p>Hipótesis y Objetivos</p></li>
+</ul>
+<section data-background-image="./assets/img/documents.jpeg" data-background-size="100%">
+</section>
+</section>
+<section id="protocolo-1" class="slide level2">
+<h2>Protocolo</h2>
+<ul>
+<li><p>Métodos:</p>
+<ul>
+<li>Diseño</li>
+<li>Duración</li>
+<li>Variables</li>
+<li>Estadística</li>
+</ul></li>
+<li>Seguridad y efectos adversos</li>
+<li>Aspectos Etico-legales</li>
+<li>Memoria económica</li>
+<li>Compromiso de publicación de los resultados</li>
+<li><p>Bibliografía y anexos (Cronograma)</p></li>
+</ul>
+<section data-background-image="./assets/img/documents.jpeg" data-background-size="100%">
+</section>
+</section>
+<section id="url" class="slide level2">
+<h2>URL</h2>
+<h2>
+<p><code>www.aepd.es/normativa</code></p>
+<!-- `acis.sergas.es` -->
+</h2>
+<section data-background-image="./assets/img/idea.png" data-background-size="100%">
+</section>
+</section>
+<section id="muchas-gracias" class="slide level2">
+<h2>Muchas gracias!</h2>
+<p><code>anescalc.github.io/ceic_info</code></p>
+<section data-background-image="./assets/img/brain.jpg" data-background-size="100%">
+</section>
+</section>
+    </div>
+  </div>
+
+  <script src="index_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="index_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
